@@ -20,7 +20,7 @@ venv\Scripts\activate      # On Windows
 pip install -r requirements.txt
 
 or 
-use the presnt venv and activate 
+use the present venv and activate 
 
 using source venv/bin/activate  
 
