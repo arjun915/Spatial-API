@@ -19,34 +19,12 @@ venv\Scripts\activate      # On Windows
 
 pip install -r requirements.txt
 
-4️⃣ Setup PostgreSQL & PostGIS
+or 
+use the presnt venv and activate 
 
-Ensure you have PostgreSQL and PostGIS installed. Then create a database:
+using source venv/bin/activate  
 
-CREATE DATABASE spatial_db;
-CREATE EXTENSION postgis;
-
-5️⃣ Configure .env or settings.py
-
-Update DATABASES in settings.py:
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'spatial_db',
-        'USER': 'your_user',
-        'PASSWORD': 'your_password',
-        'HOST': 'localhost',
-        'PORT': '5432',
-    }
-}
-
-6️⃣ Run Migrations
-
-python manage.py makemigrations
-python manage.py migrate
-
-7️⃣ Run the Development Server
+4️⃣ Run the Development Server
 
 python manage.py runserver
 
